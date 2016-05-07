@@ -1,0 +1,16 @@
+{
+  "name": "NoAd",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "No Ad promote ",
+  "background": "background.html",
+  "browser_action": {
+    "name": "NoAd",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.js", "content.js" ],
+    "matches": [ "http://www.baidu.com/*", "https://www.baidu.com/*"]
+  }]
+}
